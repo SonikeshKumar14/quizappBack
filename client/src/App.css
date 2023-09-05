@@ -1,0 +1,209 @@
+/* reset */
+.form-control:focus {
+	box-shadow: none !important;
+}
+
+/* utils */
+.border-none {
+	border: none;
+}
+.w-40 {
+	width: 40% !important;
+}
+
+.navbar-nav .nav-link {
+	margin-right: 5px;
+}
+#root header .navbar {
+	padding: 24px;
+}
+.login-container,
+.register-container,
+.quiz-form-container {
+	max-width: 500px;
+}
+
+.rules-container {
+	max-width: 900px;
+}
+.rules-container .card-footer {
+	margin-top: 20px;
+}
+.rules-container button {
+	margin-top: 40px;
+	width: 130px;
+}
+
+.quiz-question-container .question-card {
+	border: none;
+	padding: 3rem !important;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.quiz-question-container .card-header {
+	background: #fff;
+	padding: 1rem 0;
+}
+.quiz-question-container .card-title {
+	padding: 1.5rem 0 0;
+	text-transform: none;
+	line-height: 1.5;
+}
+.quiz-question-container .card[role='button'][data-selected='false']:hover {
+	background: #e2ffff !important;
+}
+
+.quiz-question-container .card-footer {
+	margin-top: 20px;
+	border: none;
+	padding: 0;
+}
+.quiz-question-container .card-footer button {
+	width: 140px;
+}
+
+.quiz-question-container .quiz-results-card {
+	border: none;
+	padding: 0 3rem !important;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.quiz-question-container .quiz-results-card .card-header {
+	margin-right: 50px;
+	border-bottom: none;
+}
+.quiz-question-container .quiz-results-card .card-header img {
+	max-width: 250px;
+}
+.quiz-question-container .quiz-results-card .results-points {
+	border-left: 1px solid #000;
+}
+.quiz-question-container .quiz-results-card .card-footer {
+	background: none;
+}
+.quiz-question-container .quiz-results-card .card-footer a {
+	padding: 5px 15px;
+}
+
+.leaderboard-container {
+	max-width: 800px;
+}
+.leaderboard-container .card {
+	padding: 24px;
+	margin: 20px 0;
+	border: none;
+	border-bottom: 1px solid #0000002d;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.leaderboard-container .card-wrapper .rank-user-wrapper {
+	display: flex;
+	width: 66%;
+}
+.leaderboard-container .card-wrapper .rank-user-wrapper .rank {
+	flex: 1;
+}
+.leaderboard-container .card-wrapper .rank-user-wrapper .username {
+	flex: 2;
+}
+.leaderboard-container .card-wrapper .rank-user-wrapper .username svg {
+	margin-right: 10px;
+}
+
+/* create quiz */
+.quiz-form-container .question-card {
+	/* background: #f7f7f7; */
+	box-shadow: 0 0 2px #000;
+}
+.quiz-form-container input[type='text'] {
+	background: none;
+	border: 1px solid #ced4da;
+}
+.quiz-form-container .form-check {
+	display: flex;
+	align-items: center;
+}
+.quiz-form-container .form-check .form-check-input[type='radio'] {
+	margin-bottom: 30px;
+}
+.quiz-form-container .form-check .form-check-label {
+	margin-top: 3px;
+	/* display: flex; */
+	width: 100%;
+}
+.quiz-form-container .form-check .form-check-label input + small {
+	min-height: 25px;
+}
+.quiz-form-container .submit-btn {
+	width: 100%;
+	margin-top: 20px;
+}
+.quiz-form-container .dropdown-divider {
+	border-top: 1px solid #ccc;
+	margin-top: 25px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+	.rules-container .card {
+		padding: 20px 10px 3rem !important;
+	}
+	.leaderboard-container .card {
+		flex-direction: column;
+	}
+	.leaderboard-container .card-wrapper .points {
+		margin-top: 20px;
+	}
+	.leaderboard-container .card-wrapper .rank-user-wrapper {
+		width: 100%;
+	}
+	.leaderboard-container .card-wrapper .rank-user-wrapper .rank {
+		flex: 0;
+	}
+	.leaderboard-container .card-wrapper .rank-user-wrapper .username {
+		margin-left: 20px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.login-container,
+	.register-container,
+	.quiz-form-container {
+		padding: 20px;
+	}
+
+	.quiz-question-container .question-card,
+	.quiz-question-container .quiz-results-card {
+		padding: 0px !important;
+	}
+
+	.leaderboard-container .card .card-body {
+		margin-left: 0;
+	}
+	.leaderboard-container .card-wrapper .rank-user-wrapper {
+		flex-direction: column;
+	}
+	.leaderboard-container .card-wrapper .rank-user-wrapper .username {
+		margin: 5px 0 0;
+	}
+}
+
+@media (max-width: 400px) {
+	.home-container .card-footer {
+		/* width: 100% !important; */
+		flex-direction: column;
+	}
+	.home-container .card-footer button {
+		width: 100% !important;
+		margin-bottom: 10px;
+	}
+	.leaderboard-container .card .card-header {
+		margin-left: 0;
+	}
+	.leaderboard-container .card .card-body {
+		padding: 0 0 0 16px;
+	}
+}
